@@ -1,0 +1,218 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Política de Privacidad de Venti7</title>
+<style>
+  :root {
+    --navy: #131927;
+    --orange: #EC793A;
+    --teal: #3C8895;
+    --text: #1F2937;
+    --text-secondary: #4B5563;
+    --border: #E5E7EB;
+    --bg: #FFFFFF;
+    --bg-subtle: #F9FAFB;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    padding: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.6;
+  }
+  header {
+    background: var(--navy);
+    color: #fff;
+    padding: 2.5rem 1.5rem 2rem;
+    text-align: center;
+  }
+  header .logo {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background: var(--orange);
+    color: var(--navy);
+    font-weight: 700;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  header h1 {
+    margin: 0 0 0.5rem;
+    font-size: 1.6rem;
+    font-weight: 700;
+  }
+  header .updated {
+    color: #D1D5DB;
+    font-size: 0.95rem;
+    margin: 0;
+  }
+  main {
+    max-width: 680px;
+    margin: 0 auto;
+    padding: 2.5rem 1.5rem 4rem;
+  }
+  section {
+    margin-bottom: 2.25rem;
+  }
+  h2 {
+    font-size: 1.15rem;
+    color: var(--navy);
+    border-bottom: 2px solid var(--orange);
+    padding-bottom: 0.4rem;
+    margin: 0 0 0.9rem;
+  }
+  p { margin: 0 0 0.9rem; }
+  ul { margin: 0 0 0.9rem; padding-left: 1.3rem; }
+  li { margin-bottom: 0.5rem; }
+  a { color: var(--teal); text-decoration: underline; }
+  a:hover { color: var(--orange); }
+  strong { color: var(--navy); }
+  .note {
+    background: var(--bg-subtle);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 0.9rem 1.1rem;
+    font-size: 0.92rem;
+    color: var(--text-secondary);
+  }
+  .highlight {
+    background: var(--bg-subtle);
+    border-left: 3px solid var(--orange);
+    border-radius: 4px;
+    padding: 0.9rem 1.1rem;
+  }
+  footer {
+    text-align: center;
+    padding: 2rem 1.5rem 3rem;
+    color: var(--text-secondary);
+    font-size: 0.85rem;
+    border-top: 1px solid var(--border);
+  }
+  footer a { color: var(--text-secondary); }
+
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --text: #F3F4F6;
+      --text-secondary: #9CA3AF;
+      --border: #273350;
+      --bg: #131927;
+      --bg-subtle: #171E30;
+    }
+    a { color: #3E8D9A; }
+    a:hover { color: var(--orange); }
+    strong { color: #fff; }
+  }
+</style>
+</head>
+<body>
+<header>
+  <div class="logo">7</div>
+  <h1>Política de Privacidad de Venti7</h1>
+  <p class="updated">Última actualización: 18 de septiembre de 2026</p>
+</header>
+
+<main>
+
+<section>
+  <h2>Responsable del tratamiento</h2>
+  <p>
+    Gabriel Tarazona, operando la aplicación Venti7 en Dublín, Irlanda.
+    Contacto: <a href="mailto:venti7app@gmail.com">venti7app@gmail.com</a>
+  </p>
+  <p class="note">
+    Esta sección se actualizará cuando Venti7 se constituya como sociedad,
+    sin que cambie el resto de esta política.
+  </p>
+</section>
+
+<section>
+  <h2>Qué datos recogemos</h2>
+  <ul>
+    <li><strong>Nombre completo</strong> — al registrarte</li>
+    <li><strong>Email</strong> — al registrarte, y para iniciar sesión</li>
+    <li><strong>Teléfono</strong> — opcional, si lo facilitas</li>
+    <li><strong>Historial de pedidos</strong> — restaurante, artículos, importe, estado y fecha de cada pedido</li>
+    <li><strong>Reseñas</strong> — puntuación y comentario; se muestran a otros usuarios como "Cliente anónimo", nunca con tu nombre</li>
+    <li><strong>Identificador de notificaciones push</strong> — para poder avisarte de actualizaciones de tus pedidos</li>
+    <li>
+      <strong>Datos de pago</strong>: nunca llegan a nuestros servidores. Van
+      directamente a Stripe, nuestro procesador de pagos, que cumple el
+      estándar de seguridad PCI-DSS. Nosotros solo guardamos el importe
+      del pedido, nunca el número de tu tarjeta.
+    </li>
+  </ul>
+  <p>No recogemos tu ubicación.</p>
+</section>
+
+<section>
+  <h2>Con quién compartimos datos</h2>
+  <p>
+    Usamos los siguientes proveedores para operar la app, cada uno
+    tratando solo los datos necesarios para su función:
+  </p>
+  <ul>
+    <li><strong>Supabase</strong> (Irlanda, UE) — alojamiento de nuestra base de datos</li>
+    <li><strong>Stripe</strong> — procesamiento de pagos</li>
+    <li><strong>Resend</strong> — envío de correos transaccionales (confirmaciones, notificaciones)</li>
+    <li><strong>Cloudflare</strong> — verificación anti-fraude en el inicio de sesión y formularios</li>
+    <li><strong>Expo</strong> — entrega de notificaciones push</li>
+  </ul>
+  <p><strong>No vendemos tus datos a nadie, bajo ninguna circunstancia.</strong></p>
+</section>
+
+<section>
+  <h2>Tus derechos</h2>
+  <p>
+    Bajo el RGPD, tienes derecho a acceder, corregir, eliminar, o pedir
+    una copia de tus datos, y a oponerte a su tratamiento. Puedes
+    ejercerlos escribiendo a <a href="mailto:venti7app@gmail.com">venti7app@gmail.com</a>.
+  </p>
+  <div class="highlight">
+    <p style="margin-bottom:0;">
+      <strong>Eliminar tu cuenta</strong>: puedes hacerlo tú mismo en cualquier
+      momento desde Perfil → Eliminar cuenta, dentro de la app. Si nunca has
+      hecho un pedido ni escrito una reseña, tus datos se borran por
+      completo. Si tienes historial de pedidos o reseñas, los anonimizamos
+      (dejan de estar vinculados a ti) en vez de borrarlos del todo, porque
+      la ley nos obliga a conservar ciertos registros de transacciones por
+      motivos contables.
+    </p>
+  </div>
+  <p>
+    Si no estás conforme con cómo tratamos tus datos, tienes derecho a
+    presentar una reclamación ante la
+    <a href="https://www.dataprotection.ie" target="_blank" rel="noopener">Data Protection Commission de Irlanda</a>.
+  </p>
+</section>
+
+<section>
+  <h2>Edad mínima</h2>
+  <p>
+    Venti7 no está dirigida a menores de 16 años. Si eres menor de esa
+    edad, no debes usar la app sin la supervisión de un adulto responsable.
+  </p>
+</section>
+
+<section>
+  <h2>Cambios a esta política</h2>
+  <p>
+    Si algo cambia (por ejemplo, al constituirse Venti7 como empresa),
+    actualizaremos esta página y la fecha de arriba.
+  </p>
+</section>
+
+</main>
+
+<footer>
+  Venti7 · <a href="mailto:venti7app@gmail.com">venti7app@gmail.com</a>
+</footer>
+
+</body>
+</html>
